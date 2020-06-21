@@ -14,8 +14,13 @@ Paragraph 1
 
 Paragraph 2
 
-- 
+- I encountered some technical challenges with things like resample and pd.to_datetime, both of which are crucial for creating plots of time series data.  Through readin much documentation and a little help from the TAs, I was able to overcome this. 
+- One example of a technical challenge I overcame was using the loc function to identify a very specific timeframe: "2019-01-01":"2019-04-28".  I read multiple examples of documentation from both stackoverflow and hyperlinked resources in the module to find the right syntax.  Another challenge was figuring out the syntax for resampling data by "W" and then using the sum() aggregate.   After some trial and error and replacing brackets with parentheses, I was able to fix it.
 
 Paragraph 3
 
-- In the beginning of this module, one of goals laid out for me was to identify opportunities for ways to improve access to ride-sharing services and determine affordability for underserved neighborhoods.  People in more dense cities generally have more options across the board, so finding ways to incentivize drivers to go to rural areas would help serve those communities better.
+- One recommendation would be to do additional data analysis on suburban drivers to see how many of them normally drive within reasonable distance of rural cities and then create an incentive program to entice those suburban drivers to drive out to rural areas and perform rides there as well.  Coordinated ride sharing from rural areas to large suburban or even urban areas could help increase the overall number of rides in the rural areas and help cut down on average fare costs for riders. 
+- As mentioned above, my first additional analysis would be to get another data set of ride/fares by specific zip codes vs general city types.  I would then do a second analsis (if legally allowed) on the ages of the riders in order find opportunities to better serve senior citizens with things like special discounts, etc.  
+- I would take technical steps such as downloading and merging data sets that include ride/fare by zipcode and by rider age and merge them into the dataset that we used for this challenge and create some additional finds such as: 
+    1) A dataframe of how many riders in suburban or urban areas are within reason driving distance of a rural area and what the difference in fares gained from servicing rural areas would be.  These differences in average fare between surburban and rural city types could then be highlighted to drivers who may then in turn ask for more information on how to serve those communities. 
+    2) A pie chart showing riders by age groups of every 10 years (10-20 yr olds, 50-60 yr olds, etc).  If certain age groups are very underserved based on the number of total riders in each age group, then there could be opportunity to offer more rides to them and learn more about their needs.
